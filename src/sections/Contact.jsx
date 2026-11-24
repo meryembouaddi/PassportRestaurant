@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { emailConfigured, sendReview } from "../services/email";
+import { emailConfigured, sendMessage } from "../services/email";
 
 export default function Contact() {
   const [busy, setBusy] = useState(false);
@@ -22,7 +22,7 @@ export default function Contact() {
     setBusy(true);
     setStatus("Envoi en cours…");
     try {
-      await sendReview({
+      await sendMessage({
         from_name: fields.get("from_name").trim() || "Visiteur",
         reply_to: fields.get("reply_to").trim(),
         rating: fields.get("rating") || "Sans note",
@@ -56,11 +56,11 @@ export default function Contact() {
         <fieldset disabled={busy}>
           <legend>Écrire à PASSPORT</legend>
           <label>
-            Votre nom:
+            Votre nom (facultatif)
             <input name="from_name" autoComplete="name" maxLength={100} />
           </label>
           <label>
-            Votre adresse e-mail:
+            Votre adresse e-mail
             <input
               name="reply_to"
               type="email"
@@ -70,7 +70,7 @@ export default function Contact() {
             />
           </label>
           <label>
-            Votre note sur le concept :
+            Votre note sur le concept (facultatif)
             <select name="rating" defaultValue="">
               <option value="">Sans note</option>
               {[1, 2, 3, 4, 5].map((n) => (
