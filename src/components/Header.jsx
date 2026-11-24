@@ -5,8 +5,9 @@ const links = [
   ["Le concept", "#concept"],
   ["Les escales", "#escales"],
   ["Le projet", "#projet"],
-  ["Contact", "#contact"],
+  ["Contact et avis", "#contact"],
   ["Mon passeport", "#passeport"],
+  ["Réserver une table", "#reservation"],
 ];
 
 export default function Header() {
