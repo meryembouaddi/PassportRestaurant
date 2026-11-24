@@ -1,3 +1,4 @@
+import Reservation from "./sections/Reservation";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./sections/Hero";
@@ -17,6 +18,7 @@ export default function App() {
         <Concept />
         <Passeport />
         <Projet />
+        <Reservation />
         <Contact />
       </main>
       <Footer />
