@@ -4,7 +4,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export const emailConfigured = Boolean(serviceId && templateId && publicKey);
 
-export async function sendReview(review) {
+export async function sendMessage(params) {
   const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -12,7 +12,7 @@ export async function sendReview(review) {
       service_id: serviceId,
       template_id: templateId,
       user_id: publicKey,
-      template_params: review,
+      template_params: params,
     }),
   });
   if (!response.ok) throw new Error("EmailJS a refusé la demande.");
