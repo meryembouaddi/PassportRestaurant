@@ -21,7 +21,6 @@ export default function Hero() {
       </div>
       <div className="heroFoot">
         <span>AGADIR, MAROC</span>
-        <span>PROJET ENTREPRENEURIAL / 2026</span>
       </div>
     </section>
   );
