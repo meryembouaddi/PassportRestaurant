@@ -5,7 +5,7 @@ const links = [
   ["Le concept", "#concept"],
   ["Les escales", "#escales"],
   ["Le projet", "#projet"],
-  ["Contact et avis", "#contact"],
+  ["Contact", "#contact"],
   ["Mon passeport", "#passeport"],
 ];
 
