@@ -4,7 +4,6 @@ export default function Projet() {
   return (
     <section id="projet" className="wrap dossier">
       <div>
-        <small>Dossier de soutenance</small>
         <h2>
           Le <em>projet.</em>
         </h2>
