@@ -14,7 +14,7 @@ export default function Projet() {
           target="_blank"
           rel="noopener"
         >
-          Consulter le dossier PDF
+          Consulter la soutenance finale (PDF)
         </a>
       </div>
       <div>
