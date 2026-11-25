@@ -43,7 +43,7 @@ export default function Contact() {
   return (
     <section id="contact" className="wrap contact">
       <div>
-        <small>Contact et avis</small>
+        <small>Contact</small>
         <h2>
           Votre <em>avis.</em>
         </h2>
@@ -56,7 +56,7 @@ export default function Contact() {
         <fieldset disabled={busy}>
           <legend>Écrire à PASSPORT</legend>
           <label>
-            Votre nom (facultatif)
+            Votre nom
             <input name="from_name" autoComplete="name" maxLength={100} />
           </label>
           <label>
@@ -70,7 +70,7 @@ export default function Contact() {
             />
           </label>
           <label>
-            Votre note sur le concept (facultatif)
+            Votre note sur le concept
             <select name="rating" defaultValue="">
               <option value="">Sans note</option>
               {[1, 2, 3, 4, 5].map((n) => (
